@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>十九大报告20题，你会做几道？</title>
+    <!--STATUS OK-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="format-detection" content="telephone=no" searchtype="map">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="keywords" content="十九大报告20题，你会做几道？"/>
+    <meta name="description" content="十九大报告20题，你会做几道？"/>
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="U4167P1DT20150129103148.jpg"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="U4167P1DT20150129103148_1.jpg"/>
+    <link data-logo="" rel="apple-touch-icon" sizes="114x114" href="U4167P1DT20150129103149.jpg"/>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script type="text/javascript">
+        //公共全局配置文件
+        var globalConfig = {
+            startTime: new Date().getTime(),	//页面开始渲染时间 ， 目前应用于：日志统计、性能统计。
+            isLogin: ''
+        }
+    </script>
+</head>
+
+<body>
+
+
+<div id="wx_logo" style="margin:0 auto;display:none;">
+    <img src="images/share_icon.jpg">
+</div>
+<!--封底背景-->
+<section class="endpage j_PreLoad" data-bg="images/endpage_bg.png">
+    <p id="j_desc" class="desc"></p>
+
+    <div class="actions">
+
+        <!--内页背景-->
+        <a id="j_reload" href="javascript:void(0);" class="j_PreLoad" data-bg="images/playpage_bg.jpg">重新答题</a>
+    </div>
+
+
+    <!--分享弹层-->
+    <div class="share_bg j_share_bg j_PreLoad" data-bg="images/share_mask.png">
+        <p class="share_icon"></p>
+    </div>
+
+</section>
+
+
+<!--封面背景-->
+<section class="frontpage j_PreLoad" data-bg="images/frontpage_bg.png">
+    <span class="" data-bg=""></span>
+
+
+    <!--封面上 logo-->
+
+    <a class="enter hide j_enter" href="javascript:void(0);">开始测试</a>
+    <span class="" data-bg=""></span>
+
+</section>
+
+<script src="js/zepto.js"></script>
+<script>
+
+
+    //微信分享的配置文件
+    var weixinShareConfig = {
+        'logo': 'http://img4.imgtn.bdimg.com/it/u=1176598408,294684300&fm=11&gp=0.jpg',	 //必填，分享到朋友圈的logo
+        'title': '关于十九大报告的25道选择题',	   //必填，分享到朋友圈大标题
+        'homeLink': window.location.href	//必填，分享到朋友圈点击返回到的专题首页地址
+    };
+    var examConfig = {
+        questionList: [
+            {
+                turn: "1",
+                image: "images/1.jpg",
+                question: "（）是实现民族振兴，赢得国际竞争主动的战略资源",
+                answerA: "人才",
+                answerB: "经济",
+                answerC: "军事",
+                answerD: "政治",
+                answer: "A"
+            },
+            {
+                turn: "2",
+                image: "images/2.jpg",
+                question: "过去五年的工作取得的首要成就是（）",
+                answerA: "经济建设",
+                answerB: "民主法制建设",
+                answerC: "思想文化建设",
+                answerD: "解决主要矛盾",
+                answer: "A"
+            },
+            {
+                turn: "3",
+                image: "images/3.jpg",
+                question: "成功实现中国梦，以下选项中起决定性作用的是（）",
+                answerA: "党的建设的伟大工程",
+                answerB: "党的建设伟大事业",
+                answerC: "党的建设伟大斗争",
+                answerD: "以上都是",
+                answer: "A"
+            },
+            {
+                turn: "4",
+                image: "images/4.jpg",
+                question: "我国社会主义民主是维护人民根本利益的最广泛、最真实、最管用的民主。发展社会主义民主政治就是要体现人民意志、保障人民权益、激发人民创造活力，用（）保证人民当家作主。",
+                answerA: "制度体系",
+                answerB: "法律体系",
+                answerC: "亲民政策",
+                answerD: "道德体系",
+                answer: "A"
+            },
+            {
+                turn: "5",
+                image: "images/5.jpg",
+                question: "（）是人民当家作主和依法治国的根本保证，人民当家作主是社会主义民主政治的本质特征，依法治国是党领导人民治理国家的基本方式，三者统一于我国社会主义民主政治伟大实践。",
+                answerA: "国家领导",
+                answerB: "党的领导",
+                answerC: "以人为本",
+                answerD: "都不正确",
+                answer: "B"
+            },
+            {
+                turn: "6",
+                image: "images/6.jpg",
+                question: "人民代表大会制度是坚持党的领导、人民当家作主、依法治国有机统一的（）制度安排，必须长期坚持、不断完善。",
+                answerA: "首要政治",
+                answerB: "重要政治",
+                answerC: "根本政治",
+                answerD: "全面政治",
+                answer: "C"
+
+            },
+            {
+                turn: "7",
+                image: "images/7.jpg",
+                question: "（）是实现党的领导的重要方式，是我国社会主义民主政治的特有形式和独特优势。",
+                answerA: "协商民主",
+                answerB: "民主集中",
+                answerC: "民主专政",
+                answerD: "社会主义",
+                answer: "A"
+            },
+            {
+                turn: "8",
+                image: "images/8.jpg",
+                question: "在党的（）提出了贯彻新发展理念建设现代化经济的要求？",
+                answerA: "十六大",
+                answerB: "十七大",
+                answerC: "十八大",
+                answerD: "十九大",
+                answer: "D"
+            },
+            {
+                turn: "9",
+                image: "images/9.jpg",
+                question: "( )在资源配置中起决定性作用",
+                answerA: "市场",
+                answerB: "国家",
+                answerC: "企业",
+                answerD: "个人",
+                answer: "A"
+            },
+            {
+                turn: "10",
+                image: "images/10.jpg",
+                question: "（）问题是关系国计民生的根本性问题。",
+                answerA: "农业农村农民",
+                answerB: "农务农业农民",
+                answerC: "农业农情农村",
+                answerD: "农务农村农情",
+                answer: "A"
+            },
+            {
+                turn: "11",
+                image: "images/11.jpg",
+                question: "繁荣发展社会主义文艺，必须坚持以（）为中心的创作指导。",
+                answerA: "国家",
+                answerB: "群众",
+                answerC: "人民",
+                answerD: "社会",
+                answer: "C"
+            },
+            {
+                turn: "12",
+                image: "images/12.jpg",
+                question: "满足人民过上美好生活的新期待，必须（）。",
+                answerA: "提供丰富的精神食粮",
+                answerB: "深化文化体制改革",
+                answerC: "完善文化管理体制",
+                answerD: "发展科教兴国战略",
+                answer: "A"
+            },
+            {
+                turn: "13",
+                image: "images/13.jpg",
+                question: "我国力争到（）年基本实现国防和军备现代化，到（）把人民进队全面建成世界一流军队。",
+                answerA: "2030  二十一世纪末",
+                answerB: "2035  二十一世纪中叶",
+                answerC: "2040  二十二世纪初",
+                answerD: "2045  二十二世纪中叶",
+                answer: "B"
+            },
+            {
+                turn: "14",
+                image: "images/14.jpg",
+                question: "（）是一个国家，一个民族的灵魂",
+                answerA: "经济实力",
+                answerB: "人民群众",
+                answerC: "文化",
+                answerD: "军事实力",
+                answer: "C"
+            },
+            {
+                turn: "15",
+                image: "images/15.jpg",
+                question: "（）决定文化前进方向和发展道路",
+                answerA: "主导国家的政权",
+                answerB: "政治体制",
+                answerC: "意识形态",
+                answerD: "人民意识",
+                answer: "C"
+            },
+            {
+                turn: "16",
+                image: "images/16.jpg",
+                question: "“（）是当代中国精神的集中体现，凝结着全体人民共同的价值追求",
+                answerA: "人民群众的根本利益",
+                answerB: "社会主义核心价值观",
+                answerC: "国家发展潜力",
+                answerD: "中国梦精神",
+                answer: "B"
+            },
+            {
+                turn: "17",
+                image: "images/17.jpg",
+                question: "为了实现中华民族的伟大复兴，应该把（）放在优先位置",
+                answerA: "教育事业",
+                answerB: "医疗事业",
+                answerC: "住房改革",
+                answerD: "科教兴国",
+                answer: "A"
+            },
+            {
+                turn: "18",
+                image: "images/18.jpg",
+                question: "解决台湾问题、实现祖国完全统一，是全体中华儿女共同愿望，是中华民族根本利益所在，要顺利解决这一问题，我们需要坚持（）的原则",
+                answerA: "以经济发展为核心",
+                answerB: "和平统一，一国两制",
+                answerC: "一个中国",
+                answerD: "中国特色社会主义",
+                answer: "B"
+            },
+            {
+                turn: "19",
+                image: "images/19.jpg",
+                question: "中国的全球治理观（）",
+                answerA: "霸权主义",
+                answerB: "共商共建共享",
+                answerC: "保守主义",
+                answerD: "强权政治",
+                answer: "B"
+            }
+            
+        ],
+        comments: [
+            '恭喜你获得“少先队员”的荣誉勋章，鲜艳的红领巾飘扬在前胸，你是共产主义的接班人 ',
+            '恭喜你获得“共青团员”的荣誉勋章，你是五月的花海，用青春拥抱时代',
+            '恭喜你获得“共产党员”的荣誉勋章，前进在灿烂阳光下，胜利歌声多么嘹亮 ',
+            '恭喜你获得“人大代表”的荣誉勋章，为建设富强、民主、文明、和谐的社会主义国家努力奋斗！'
+        ],
+        names: [
+            '少先队员',
+            '共青团员',
+            '共产党员',
+            '人大代表'
+        ]
+    };
+
+</script>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
