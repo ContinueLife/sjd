@@ -211,12 +211,12 @@ section {
 
 
 .page {
-	background-image:url(../images/frontpage_bg2.png);
+	background-image:url(../images/frontpage_bg2.png) center center no-repeat;
 	background-size: 100% auto
 }
 
 .page h3 {
-	font-size: 14px;
+	font-size: 9px;
 	color: #1a1a1a;
 	margin: 15px 20px 10px
 }
